@@ -1,0 +1,89 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        /* ca. 20px */
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        /* ca. 18px */
+    }
+
+    p,
+    .header-links a {
+        font-size: 0.85rem;
+        /* ca. 12px */
+    }
+
+    /* Menü kleiner */
+    .menu-button img {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Menü-Links */
+    .menu-dropdown {
+        width: 170px;
+    }
+
+    .menu-dropdown li {
+        font-size: 14px;
+    }
+
+    /* Tabellenanpassung */
+    #footprint-table {
+        width: 90%;
+    }
+
+    #footprint-table th,
+    #footprint-table td {
+        font-size: 0.85rem;
+    }
+
+    /* Spendenkarten kleiner */
+    .donation-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /*Welcome Content*/
+    .welcome-content h1 {
+        font-size: 27px !important; 
+    }
+
+    .footprint h2{
+        position: absolute;
+        top: 7%;
+        font-size: 15px !important;
+    }
+
+    .footprint p{
+        position: absolute;
+        top: 12%;
+        font-size: 15px !important;
+    }
+
+    .donate h2{
+        position: absolute;
+        top: 2%;
+        font-size: 15px !important;
+    }
+
+    #title1 {
+        position: absolute;
+        top: 7%;
+        font-size: 7px;
+    }
+
+    #title2 {
+        position: absolute;
+        top: 10%;
+        font-size: 7px;
+    }
+}
+
+
