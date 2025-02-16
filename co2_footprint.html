@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/sections.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
@@ -64,19 +67,28 @@
    <h2>CO₂-Emissionen nach Ländern und Unternehmen</h2>
    <p>Hier finden Sie eine Übersicht über die jährlichen CO₂-Emissionen:</p>
    <div class="footprint-table-container">
-    <table id="footprint-table">
-       <caption>CO₂-Emissionen von Ländern & Unternehmen</caption>
-       <thead>
+    <div class="table-controls">
+      <label for="data-selector">Daten anzeigen nach:</label>
+      <select id="data-selector">
+          <option value="countries">Länder</option>
+          <option value="companies">Unternehmen</option>
+      </select>
+  </div>
+  
+  <table id="footprint-table">
+      <thead>
           <tr>
-             <th scope="col">Land</th>
-             <th scope="col">Unternehmen</th>
-             <th scope="col">Emissionen (in Tonnen)</th>
+              <th id="col1">Rang</th>
+              <th id="col2">Land</th>
+              <th id="col3">CO₂-Emissionen (Mio. Tonnen)</th>
+              <th id="col4">Jahr des Maximums</th>
           </tr>
-       </thead>
-       <tbody>
-          <!-- Dynamische Daten werden hier eingefügt -->
-       </tbody>
-    </table>
+      </thead>
+      <tbody>
+          <!-- Daten werden hier per JavaScript eingefügt -->
+      </tbody>
+  </table>
+  
  </div>
   </section>
 
@@ -139,5 +151,8 @@
     </div>
   </footer>  
  </main>
+ <script src="./js/script.js"></script>
+ <script src="./js/data.js"></script>
+ <script src="./js/translations.js"></script>
 </body>
 </html>
