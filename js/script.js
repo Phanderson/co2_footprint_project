@@ -1,7 +1,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     let tableBody = document.querySelector("#footprint-table tbody");
     let dataSelector = document.querySelector("#data-selector");
-    dataSelector.value = "companies"; 
+    dataSelector.value = "countries"; 
      loadData("companies");
 
      dataSelector.addEventListener("change", function () {
@@ -9,10 +9,9 @@
      });
 
     function loadData(type) {
-        // Falls DataTables schon existiert, zerstören & komplett zurücksetzen
         if ($.fn.DataTable.isDataTable("#footprint-table")) {
             $('#footprint-table').DataTable().destroy();
-            $('#footprint-table').empty(); // Alles löschen (inkl. alter DataTables-Struktur)
+            $('#footprint-table').empty(); 
         }
     
         // Neues Tabellen-Layout erstellen
