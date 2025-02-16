@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Light.ttf") format("truetype");
+    font-weight: 300;
+  }
+  
+  /* Standard-Styles für Text */
+  body {
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Überschriften */
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
