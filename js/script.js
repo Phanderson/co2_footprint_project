@@ -74,7 +74,7 @@
             "ordering": true,
             "info": true,
             "language": {
-                "lengthMenu": "Zeige _MENU_ Einträge pro Seite",
+                "lengthMenu": "Zeige _MENU_ pro Seite",
                 "zeroRecords": "Keine passenden Daten gefunden",
                 "info": "Zeige _START_ bis _END_ von _TOTAL_ Einträgen",
                 "infoEmpty": "Keine Einträge verfügbar",
