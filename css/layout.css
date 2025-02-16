@@ -1,0 +1,305 @@
+/* Grundlegendes Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* ===================== */
+  /* HEADER */
+  /* ===================== */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 45px;
+  }
+  
+  /* Navigation */
+  .header-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .header-links a:hover {
+    color: #009688;
+  }
+  
+  /* Menü */
+  .menu-container {
+    position: relative;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .menu-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+  }
+  
+  .menu-container:hover .menu-dropdown {
+    display: block;
+  }
+  
+  /* ===================== */
+  /* MAIN SECTIONS         */
+  /* ===================== */
+  main {
+    flex: 1;
+    width: 100%;
+  }
+  
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  section:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Welcome Section */
+  .welcome {
+    background: url('../img/background.webp') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .welcome-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  /* ===================== */
+  /* FOOTPRINT TABLE       */
+  /* ===================== */
+  .footprint {
+    background: #fff;
+  }
+  
+  #footprint-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #footprint-table th,
+  #footprint-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #footprint-table th {
+    background: #009688;
+    color: white;
+  }
+  
+  /* ===================== */
+  /* SPENDEN SECTION       */
+  /* ===================== */
+  .donate {
+    background: #f9f9f9;
+  }
+  
+  .donate-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .donation-card {
+    background: #009688;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+  }
+  
+  .donation-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .donation-card button {
+    background: white;
+    color: #009688;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .donation-card button:hover {
+    background: #00796b;
+    color: white;
+  }
+  
+  /* ===================== */
+  /* FOOTER                */
+  /* ===================== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #747474;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100px; 
+    position: relative;
+    bottom: 0;
+  }
+  
+  /* Footer Logo */
+  footer .footer-logo {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+  }
+
+  footer .footer-logo img {
+    height: 70px;
+  }
+  
+  /* Footer Links */
+  footer .footer-links {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    display: flex;
+    gap: 50px;
+  }
+  
+  footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  footer .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  footer .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Socials */
+  footer .footer-socials {
+    position: absolute;
+    right: 20px; /* Abstand vom rechten Rand */
+    top: 50%;
+    transform: translateY(-50%); /* Vertikale Zentrierung */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  footer .footer-socials h3 {
+    font-size: 14px;
+  }
+  
+  footer .footer-socials ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer .footer-socials ul li img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s;
+  }
+  
+  footer .footer-socials ul li img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ===================== */
+  /* RESPONSIVE DESIGN */
+  /* ===================== */
+  @media (max-width: 768px) {
+    .header-links {
+      display: none;
+    }
+  
+    .menu-container {
+      display: block;
+    }
+  
+    .donate-options {
+      flex-direction: column;
+    }
+  
+    .donation-card {
+      width: 100%;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-socials {
+      text-align: center;
+    }
+  }  

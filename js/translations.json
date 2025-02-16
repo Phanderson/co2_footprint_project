@@ -1,0 +1,23 @@
+{
+    "de": {
+      "home": "Home",
+      "data": "Daten",
+      "donate": "Spenden",
+      "menu_heading": "Weiterführende Links",
+      "greenpeace": "Greenpeace",
+      "uba": "Umweltbundesamt",
+      "ipcc": "Weltklimarat (IPCC)",
+      "language_label": "🌐 Sprache:"
+    },
+    "ar": {
+      "home": "الرئيسية",
+      "data": "البيانات",
+      "donate": "التبرع",
+      "menu_heading": "روابط إضافية",
+      "greenpeace": "غرينبيس",
+      "uba": "وكالة البيئة الألمانية",
+      "ipcc": "الهيئة الحكومية الدولية المعنية بتغير المناخ",
+      "language_label": "🌐 اللغة:"
+    }
+  }
+  
