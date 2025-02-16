@@ -50,10 +50,9 @@
  <main>
   <!-- Welcome Section -->
   <section id = "home" class="welcome">
-    <img src="img/background.webp" alt="background-img">
    <div class="welcome-content">
      <h1>CO²-Footprint</h1>
-     <a href="#selection" class="welcome-button">
+     <a href="#footprint" class="welcome-button">
        Zu den Fakten!
        <span class="arrow">→</span>
      </a>
@@ -64,25 +63,28 @@
   <section id = "footprint" class="footprint">
    <h2>CO₂-Emissionen nach Ländern und Unternehmen</h2>
    <p>Hier finden Sie eine Übersicht über die jährlichen CO₂-Emissionen:</p>
-   <table id="footprint-table">
-    <caption>CO₂-Emissionen von Ländern & Unternehmen</caption>
-    <thead>
-      <tr>
-        <th scope="col">Land</th>
-        <th scope="col">Unternehmen</th>
-        <th scope="col">Emissionen (in Tonnen)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Dynamische Daten werden hier später eingefügt -->
-    </tbody>
-  </table>  
+   <div class="footprint-table-container">
+    <table id="footprint-table">
+       <caption>CO₂-Emissionen von Ländern & Unternehmen</caption>
+       <thead>
+          <tr>
+             <th scope="col">Land</th>
+             <th scope="col">Unternehmen</th>
+             <th scope="col">Emissionen (in Tonnen)</th>
+          </tr>
+       </thead>
+       <tbody>
+          <!-- Dynamische Daten werden hier eingefügt -->
+       </tbody>
+    </table>
+ </div>
   </section>
 
  <!-- Spenden Section -->
  <section id="donate" class="donate">
    <h2>Unterstützen Sie unsere Mission</h2>
-   <p>Helfen Sie mit, Transparenz über CO₂-Emissionen zu schaffen und den Klimawandel zu bekämpfen.</p>
+   <p id="title1">Helfen Sie mit, Transparenz über CO₂-Emissionen zu schaffen und den Klimawandel zu bekämpfen.</p>
+   <p id="title2">Spenden gehen direkt an unsere Partnerorganisationen wie Greenpeace und Umweltbundesamt.</p>
  
    <div class="donate-options">
      <div class="donation-card">
@@ -97,8 +99,6 @@
        <button>Monatlich spenden</button>
      </div>
    </div>
- 
-   <p>Spenden gehen direkt an unsere Partnerorganisationen wie Greenpeace und Umweltbundesamt.</p>
  </section>
 
   <!-- Footer -->
