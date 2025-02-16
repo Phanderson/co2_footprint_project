@@ -91,12 +91,12 @@
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Menü anzeigen, wenn aktiv */
-.menu-container:hover .menu-dropdown {
+.menu-dropdown.active {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
+
 
 /* Menü-Elemente */
 .menu-dropdown li {

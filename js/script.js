@@ -100,4 +100,23 @@
     });
 });
 
+//Menü Ein / Ausblenden
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".menu-button");
+    const menuDropdown = document.querySelector(".menu-dropdown");
+
+    menuButton.addEventListener("click", function (event) {
+        event.stopPropagation(); // Verhindert, dass der Klick das Menü sofort schließt
+        menuDropdown.classList.toggle("active");
+    });
+
+    // Schließt das Menü, wenn man außerhalb klickt
+    document.addEventListener("click", function (event) {
+        if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
+            menuDropdown.classList.remove("active");
+        }
+    });
+});
+
+
   
